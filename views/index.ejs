@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viepwort" content="width=device-width,intial-scale=1.0">
+  <title>Cryptography Technology</title>
+  <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font/css/all.min.css">
+  <style>
+    body {
+      background-image: url("images/image.jpeg");
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="bg-dark d-flex align-items-center justify-content-between p-3">
+      <h1 class="p-3 text-light">Cryptography Technology</h1>
+
+      <div class="button">
+        <form action="/decrypt" method="get">
+          <button type="submit" class="btn btn-warning">Decrypt</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Encryption part-->
+  <div class=" my-5 container p-5 border shadow w-75 ">
+    <div>
+      <div>
+        <h3 class="text-white">Encryption</h3>
+      </div>
+      <div class="form-group">
+        <textarea id="encrypt-text" style="height: 40vh;" class="form-control" style="resize: none">
+       </textarea>
+      </div>
+      <div class="form-group mt-4">
+        <input id="encrypt-key" type="number" class="form-control" placeholder="Enter secret key">
+      </div>
+      <div class="form-group mt-4">
+        <button id="encrypt-button" class="form-control btn btn-outline-success">Encrypt</button>
+      </div>
+    </div>
+    <!--output -->
+    <div class="mt-4">
+      <legend class="text-white">Output</legend>
+      <textarea id="encrypt-output" class="form-control" style="resize: none" readonly>
+     </textarea>
+    </div>
+    <div class="form-group">
+      <button class="form-control btn btn-outline-warning mt-4">Copy <i class="fas fa-copy"></i></button>
+    </div>
+  </div>
+
+  <div class="footer h-100 p-3 bg-dark">
+    <div class="h4 text-white text-center">
+      Powered by Hi-Tech <br> &copy; 2022
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html
